@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LAB_09
 {
-    public class AnimationLogic
+    public class AnimationLogic : IAnimationLogic
     {
         public Ball Ball { get; set; }
         public Pong PongBoard { get; set; }
