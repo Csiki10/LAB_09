@@ -13,7 +13,6 @@ namespace LAB_09
         private int radius;
 
         private int speedX;
-
         public void Move()
         {
             centerX += speedX;
