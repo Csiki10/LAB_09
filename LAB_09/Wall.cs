@@ -8,7 +8,7 @@ using System.Windows;
 
 namespace LAB_09
 {
-    internal class Wall : GameItem
+    public class Wall : GameItem
     {
         private int displayWidth;
         private int displayHeight;

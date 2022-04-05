@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Media;
 using System.Windows;
+using System.Windows.Media;
 
 namespace LAB_09
 {
-    internal class Ball : GameItem
+    public class Ball : GameItem
     {
         private int centerX;
         private int centerY;
@@ -45,7 +45,6 @@ namespace LAB_09
                 return new EllipseGeometry(new Point(centerX, centerY), radius, radius);
             }
         }
-
 
     }
 }
