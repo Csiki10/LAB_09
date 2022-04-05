@@ -17,6 +17,7 @@ namespace LAB_09
         public void Move()
         {
             centerX += speedX;
+
         }
 
         public void Collision()
