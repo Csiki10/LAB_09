@@ -6,5 +6,16 @@
          Pong PongBoard { get; set; }
          Wall Wall { get; set; }
 
+         void BoardMoveLeft()
+        {
+            
+
+        }
+         void BoardMoveRight()
+        {
+            
+
+        }
+        
     }
 }

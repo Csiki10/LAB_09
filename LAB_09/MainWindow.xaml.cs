@@ -47,5 +47,20 @@ namespace LAB_09
             display.SetupLogic(new AnimationLogic((int)grid.ActualWidth, (int)grid.ActualHeight));
             display.InvalidateVisual();
         }
+     
+        
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Left)
+            {
+                display.logic.BoardMoveLeft();
+            }
+            else if(e.Key == Key.Right)
+            {
+                display.logic.BoardMoveRight();
+            }
+            display.InvalidateVisual();
+        }
     }
 }

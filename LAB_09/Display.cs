@@ -10,7 +10,7 @@ namespace LAB_09
 {
     internal class Display : FrameworkElement
     {
-        IAnimationLogic logic;
+        public IAnimationLogic logic;
 
         public void SetupLogic(IAnimationLogic logic)
         {
@@ -23,11 +23,8 @@ namespace LAB_09
             if (logic != null)
             {
                 drawingContext.DrawGeometry(Brushes.Black, null, logic.Wall.Area);
-                drawingContext.DrawGeometry(Brushes.White, new Pen(Brushes.Red, 2), logic.Letter.Area);
-                foreach (var item in logic.Balls)
-                {
-                    drawingContext.DrawGeometry(Brushes.Green, null, item.Area);
-                }
+                drawingContext.DrawGeometry(Brushes.Blue, new Pen(Brushes.Red, 2), logic.PongBoard.Area);
+                drawingContext.DrawGeometry(Brushes.Green, null, logic.Ball.Area);             
             }
         }
     }

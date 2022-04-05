@@ -11,29 +11,26 @@ namespace LAB_09
     public class Pong : GameItem
     {       
         private int centerX;
-        private int centerY;
-        
-        private int radiusX;
-        private int radiusY;
+        private int centerY;     
 
-        public Pong(int centerX, int centerY, int radiusX, int radiusY)
+        public Pong(int centerX, int centerY)
         {
-            this.centerX = centerX;
-            this.centerY = centerY;
-            
-            this.radiusX = radiusX;
-            this.radiusY = radiusY;
+            this.CenterX = centerX;
+            this.centerY = centerY;   
         }
 
         public override Geometry Area
         {
             get
             {
-                Rect r = new Rect(30, 40, 100, 20);
-                return new RectangleGeometry(r, radiusX, radiusY);                           
+                Rect r = new Rect(CenterX, centerY, 100, 30);
+                return new RectangleGeometry(r);                           
             }
         }
 
+        public int CenterX { get => centerX; set => centerX = value; }
+
+        
 
     }
 }

@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LAB_09"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowState="Maximized" Loaded="Window_Loaded" SizeChanged="Window_SizeChanged">
+        Title="MainWindow" Height="700" Width="1000" Loaded="Window_Loaded"
+        SizeChanged="Window_SizeChanged" 
+        KeyDown="Window_KeyDown"
+         >
     <Grid x:Name="grid">
         <local:Display x:Name="display" />
     </Grid>
