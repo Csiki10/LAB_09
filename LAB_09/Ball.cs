@@ -38,6 +38,11 @@ namespace LAB_09
             speedY *= -1;
         }
 
+        public void Out()
+        {
+            centerX = 100;
+            centerY = 200;
+        }
         public override Geometry Area
         {
             get
