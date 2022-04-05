@@ -23,11 +23,9 @@ namespace LAB_09
             if (logic != null)
             {
                 drawingContext.DrawGeometry(Brushes.Black, null, logic.Wall.Area);
-                drawingContext.DrawGeometry(Brushes.White, new Pen(Brushes.Red, 2), logic.Letter.Area);
-                foreach (var item in logic.Balls)
-                {
-                    drawingContext.DrawGeometry(Brushes.Green, null, item.Area);
-                }
+                drawingContext.DrawGeometry(Brushes.Black, null, logic.PongBoard.Area);
+                drawingContext.DrawGeometry(Brushes.Green, null, logic.Ball.Area);
+                
             }
         }
     }
