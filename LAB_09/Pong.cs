@@ -12,15 +12,15 @@ namespace LAB_09
     {       
         private int centerX;
         private int centerY;
-        private int size;
+        
         private int radiusX;
         private int radiusY;
 
-        public Pong(int centerX, int centerY, int size, int radiusX, int radiusY)
+        public Pong(int centerX, int centerY, int radiusX, int radiusY)
         {
             this.centerX = centerX;
             this.centerY = centerY;
-            this.size = size;
+            
             this.radiusX = radiusX;
             this.radiusY = radiusY;
         }
