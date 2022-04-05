@@ -38,6 +38,12 @@ namespace LAB_09
             speedY *= -1;
         }
 
+        public void CollisionBoard()
+        {
+            speedX *= -1;
+            speedY *= -1;
+        }
+
         public override Geometry Area
         {
             get

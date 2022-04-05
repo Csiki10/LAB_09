@@ -21,10 +21,14 @@ namespace LAB_09
 
         public void TimeStep()
         {
-            if (Ball.IsCollision(Wall) || Ball.IsCollision(PongBoard))
+            if (Ball.IsCollision(Wall))
             {
                 Ball.Collision();
                
+            }
+            else if (Ball.IsCollision(PongBoard))
+            {
+                Ball.Collision();
             }
             Ball.Move();          
         }
