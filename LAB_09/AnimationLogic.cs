@@ -52,12 +52,27 @@ namespace LAB_09
 
         public void BoardMoveLeft()
         {
-                      
+            if (PongBoard.CenterX >= 40)
+            {
                 PongBoard.CenterX -= 20;
+            }
+            else
+            {
+
+            }
+                
         }
         public void BoardMoveRight()
-        {           
+        {
+            if (PongBoard.CenterX <= AreaWidth-70)
+            {
                 PongBoard.CenterX += 20;
+            }
+            else
+            {
+
+            }
+           
         }
 
     }
