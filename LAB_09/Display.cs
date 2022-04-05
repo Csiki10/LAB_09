@@ -23,8 +23,8 @@ namespace LAB_09
             if (logic != null)
             {
                 drawingContext.DrawGeometry(Brushes.Black, null, logic.Wall.Area);
-                drawingContext.DrawGeometry(Brushes.Black, null, logic.PongBoard.Area);
-                drawingContext.DrawGeometry(Brushes.Green, null, logic.Ball.Area);
+                drawingContext.DrawGeometry(Brushes.DarkGreen, null, logic.PongBoard.Area);
+                drawingContext.DrawGeometry(Brushes.Red, null, logic.Ball.Area);
                 
             }
         }
